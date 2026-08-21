@@ -1,0 +1,26 @@
+CLAUDE.md
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
+
+# Draft pages
+*.draft.html
+drafts/
+
+# Local notes and scratch files
+notes.md
+scratch.*
+TODO.md
+*.local.*

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nimmo Smith Technologies Limited — open marine technology for accessible ocean sensing. Based in Devon, UK.">
+  <title>Nimmo Smith Technologies Limited</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:      #0B2240;
+      --teal:      #127A8C;
+      --teal-lt:   #E6F2F4;
+      --text:      #1A3040;
+      --muted:     #5A7080;
+      --border:    #D0E2E6;
+      --white:     #FFFFFF;
+      --font:      'Raleway', sans-serif;
+      --max:       720px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font);
+      font-weight: 300;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--teal); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    a:focus-visible {
+      outline: 2px solid var(--teal);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ── Header ─────────────────────────────────────────────── */
+    /* Gradient starts at the logo's exact navy so it blends     */
+    /* seamlessly. Teal glow rises from below like depth light.  */
+    header {
+      background:
+        radial-gradient(ellipse 130% 65% at 50% 115%,
+          rgba(18, 122, 140, 0.6) 0%,
+          rgba(18, 122, 140, 0.08) 55%,
+          transparent 70%),
+        linear-gradient(180deg, var(--navy) 0%, #0D3A4F 100%);
+      color: var(--white);
+      padding: 3.5rem 2rem 4rem;
+      text-align: center;
+    }
+
+    /* Logo — the SVG has the company name built in */
+    .site-logo {
+      display: block;
+      margin: 0 auto 2rem;
+      height: 110px;
+      width: auto;
+    }
+
+    /* Single tagline */
+    header .tagline {
+      font-size: clamp(1.05rem, 2.8vw, 1.35rem);
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      color: var(--white);
+      line-height: 1.3;
+    }
+
+    /* ── Divider ─────────────────────────────────────────────── */
+    .rule {
+      height: 2px;
+      border: none;
+      background: linear-gradient(90deg, transparent, var(--teal), transparent);
+      opacity: 0.3;
+    }
+
+    /* ── About ──────────────────────────────────────────────── */
+    .about {
+      background: var(--teal-lt);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.9rem;
+      letter-spacing: 0.01em;
+    }
+
+    .about p {
+      font-size: 1rem;
+      max-width: 580px;
+      margin: 0 auto;
+      color: var(--muted);
+    }
+
+    /* ── Projects ───────────────────────────────────────────── */
+    .projects {
+      padding: 4rem 2rem;
+    }
+
+    .projects .container > .section-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 2.5rem;
+      display: block;
+    }
+
+    .project-card {
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .project-logo {
+      height: 44px;
+      width: auto;
+      max-width: 120px;
+      object-fit: contain;
+      flex-shrink: 0;
+      border-radius: 6px;
+    }
+
+    .card-header h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 0;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 1.1rem;
+      line-height: 1.65;
+    }
+
+    .project-link {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--teal);
+      letter-spacing: 0.04em;
+    }
+    .project-link::after { content: ' →'; }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      border: 1px solid var(--teal);
+      border-radius: 2px;
+      padding: 0.1em 0.5em;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+      opacity: 0.75;
+    }
+
+    .coming-soon {
+      margin-top: 2rem;
+      padding: 1.5rem 2rem;
+      background: var(--teal-lt);
+      border-radius: 4px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    /* ── Footer ─────────────────────────────────────────────── */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.5);
+      padding: 3rem 2rem;
+      font-size: 0.82rem;
+      line-height: 1.9;
+    }
+
+    footer .container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    footer a { color: rgba(255,255,255,0.7); }
+    footer a:hover { color: var(--white); }
+
+    footer .footer-copy {
+      margin-top: 1rem;
+      color: rgba(255,255,255,0.3);
+    }
+
+    /* ── Responsive ──────────────────────────────────────────── */
+    @media (max-width: 480px) {
+      header   { padding: 3rem 1.5rem 3.5rem; }
+      .about   { padding: 2.5rem 1.5rem; }
+      .projects { padding: 3rem 1.5rem; }
+      .project-card { padding: 1.5rem; }
+      footer   { padding: 2.5rem 1.5rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ── Header ─────────────────────────────────────────────── -->
+  <header>
+    <!-- Logo file: add assets/img/nst-logo.svg to repo -->
+    <img class="site-logo"
+         src="assets/img/nst-logo.svg"
+         alt="Nimmo Smith Technologies Limited">
+
+    <p class="tagline">Ocean Intelligence through Innovation</p>
+  </header>
+
+  <hr class="rule">
+
+  <!-- ── About ──────────────────────────────────────────────── -->
+  <section class="about" aria-label="About">
+    <div class="container">
+      <h2>Open marine technology for accessible ocean sensing</h2>
+      <p>
+        We develop open-source tools for ocean monitoring —
+        designed to put capable sensing technology into more hands,
+        in more places. Based in Devon, we combine deep expertise
+        in ocean optics and particle imaging with a commitment to
+        open, reproducible science.
+      </p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ── Projects ───────────────────────────────────────────── -->
+  <section class="projects" aria-label="Open software">
+    <div class="container">
+
+      <span class="section-label">Open Software</span>
+
+      <!-- pyopia-gui — logo: assets/img/pyopia-gui-logo.png -->
+      <article class="project-card">
+        <div class="card-header">
+          <img class="project-logo"
+               src="assets/img/pyopia-gui-logo.png"
+               alt="pyopia-gui logo"
+               onerror="this.style.display='none'">
+          <h3>pyopia-gui</h3>
+        </div>
+        <p>
+          A graphical interface for PyOPIA — the open-source Python toolbox
+          for ocean particle image analysis. Configure, run, and visualise
+          PyOPIA processing jobs without the command line. Cross-platform,
+          Docker-orchestrated, and ready to download.
+        </p>
+        <a class="project-link"
+           href="https://github.com/nimmo-smith-technologies/pyopia-gui"
+           target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </article>
+
+      <!-- PyOPIA — logo: assets/img/pyopia-logo.png -->
+      <article class="project-card">
+        <div class="card-header">
+          <img class="project-logo"
+               src="assets/img/pyopia-logo.png"
+               alt="PyOPIA logo"
+               onerror="this.style.display='none'">
+          <h3>PyOPIA <span class="badge">Contributor</span></h3>
+        </div>
+        <p>
+          We contribute to PyOPIA, the Python Ocean Particle Image Analysis
+          toolbox developed and maintained at SINTEF Ocean. PyOPIA processes
+          images from holographic, SilCam, and UVP ocean instruments into
+          particle statistics, size distributions, and classification outputs.
+        </p>
+        <a class="project-link"
+           href="https://github.com/SINTEF/pyopia"
+           target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </article>
+
+      <p class="coming-soon">
+        Further projects are in active development.
+        More to follow.
+      </p>
+
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ── Footer ─────────────────────────────────────────────── */
+  <footer>
+    <div class="container">
+      <span>
+        <a href="mailto:info@nimmosmith.co.uk">info@nimmosmith.co.uk</a>
+      </span>
+      <span>
+        Nimmo Smith Technologies Limited is registered in England and Wales
+        &middot; Company No. 17245478
+      </span>
+      <span>
+        Riverview, Dart Mills Estate, Old Totnes Road,
+        Buckfastleigh, Devon, TQ11 0NF
+      </span>
+      <span class="footer-copy">
+        &copy; 2026 Nimmo Smith Technologies Limited
+      </span>
+    </div>
+  </footer>
+
+</body>
+</html>
