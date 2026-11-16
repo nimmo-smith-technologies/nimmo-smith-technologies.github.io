@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" viewBox="17 4.5 28 28" version="1.1" id="svg1"><rect x="17" y="4.5" width="28" height="28" rx="5" fill="#0B2240"/>
+  <defs id="defs1">
+    <mask id="mask-7">
+      <g filter="url(#filter-remove-color)" id="g289">
+        <rect x="-61.200001" y="-79.199997" width="734.40002" height="950.40002" fill="#000000" fill-opacity="0.78" id="rect288" />
+      </g>
+    </mask>
+    <filter id="filter-remove-color" x="0" y="0" width="1" height="1">
+      <feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" id="feColorMatrix1" />
+    </filter>
+    <clipPath id="clip-26">
+      <rect x="0" y="0" width="24" height="25" id="rect289" />
+    </clipPath>
+    <clipPath id="clip-25">
+      <path clip-rule="nonzero" d="m 0,0.199219 h 24 v 24 H 0 Z m 0,0" id="path289" />
+    </clipPath>
+    <mask id="mask-8">
+      <g filter="url(#filter-remove-color)" id="g291">
+        <rect x="-61.200001" y="-79.199997" width="734.40002" height="950.40002" fill="#000000" fill-opacity="0.9" id="rect290" />
+      </g>
+    </mask>
+    <filter id="filter2" x="0" y="0" width="1" height="1">
+      <feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" id="feColorMatrix2" />
+    </filter>
+    <clipPath id="clip-28">
+      <rect x="0" y="0" width="32" height="33" id="rect291" />
+    </clipPath>
+    <clipPath id="clip-27">
+      <path clip-rule="nonzero" d="m 0.398438,0.601562 h 31.203124 v 31.4375 H 0.398438 Z m 0,0" id="path291" />
+    </clipPath>
+  </defs>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(-76.503168,-110.06253)">
+    <g id="g974" transform="matrix(0.35277777,0,0,0.35277777,2.5686284e-6,2.615625e-6)">
+      <g id="g979" transform="translate(0,0.66683743)">
+        <g id="g955" transform="matrix(1.7385054,0,0,1.7385054,-225.98264,-263.6469)">
+          <path fill="none" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke="#ffffff" stroke-opacity="1" stroke-miterlimit="4" d="m 31.999991,23.99799 7.998639,8.004902 -7.998639,7.998639 -7.998638,-7.998639 z m 0,0" transform="matrix(0.623641,0,0,0.623641,286.04348,341.25652)" id="path763" />
+          <g mask="url(#mask-7)" id="g763">
+            <g id="use763" clip-path="url(#clip-26)" transform="translate(294,349)">
+              <g clip-path="url(#clip-25)" id="g2">
+                <path fill="none" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke="#ffffff" stroke-opacity="1" stroke-miterlimit="4" d="M 31.999991,17.00153 47.001353,32.002892 31.999991,46.99799 16.998629,32.002892 Z m 0,0" transform="matrix(0.623641,0,0,0.623641,-7.956516,-7.743481)" id="path2" />
+              </g>
+            </g>
+          </g>
+          <g mask="url(#mask-8)" id="g764">
+            <g id="use764" clip-path="url(#clip-28)" transform="translate(290,345)">
+              <g clip-path="url(#clip-27)" id="g1">
+                <path fill="none" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter" stroke="#60bedd" stroke-opacity="1" stroke-miterlimit="4" d="M 31.999991,9.998806 53.997813,32.002892 31.999991,54.000713 10.002169,32.002892 Z m 0,0" transform="matrix(0.623641,0,0,0.623641,-3.956516,-3.743481)" id="path1" />
+              </g>
+            </g>
+          </g>
+          <path fill-rule="nonzero" fill="#ffffff" fill-opacity="1" d="m 307.99609,361.21484 c 0,0.26172 -0.0508,0.51563 -0.15234,0.76172 -0.10156,0.2461 -0.24609,0.46094 -0.43359,0.64844 -0.1875,0.1875 -0.40235,0.33203 -0.64454,0.43359 -0.24609,0.0977 -0.5,0.14844 -0.76562,0.14844 -0.26563,0 -0.51953,-0.0508 -0.76563,-0.14844 -0.24218,-0.10156 -0.45703,-0.24609 -0.64453,-0.43359 -0.1875,-0.1875 -0.33203,-0.40234 -0.43359,-0.64844 -0.10156,-0.24609 -0.15234,-0.5 -0.15234,-0.76172 0,-0.26562 0.0508,-0.51953 0.15234,-0.76562 0.10156,-0.2461 0.24609,-0.46094 0.43359,-0.64844 0.1875,-0.1875 0.40235,-0.33203 0.64453,-0.42969 0.2461,-0.10156 0.5,-0.15234 0.76563,-0.15234 0.26562,0 0.51953,0.0508 0.76562,0.15234 0.24219,0.0977 0.45704,0.24219 0.64454,0.42969 0.1875,0.1875 0.33203,0.40234 0.43359,0.64844 0.10156,0.24609 0.15234,0.5 0.15234,0.76562 z m 0,0" id="path764" />
+        </g>
+        </g>
+    </g>
+  </g>
+</svg>
